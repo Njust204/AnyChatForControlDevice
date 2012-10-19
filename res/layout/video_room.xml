@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <SurfaceView
+                android:id="@+id/surface_remote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ProgressBar
+                android:id="@+id/progress_remote"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+         
+        <FrameLayout android:layout_height="wrap_content"
+            android:layout_weight="1"
+        android:layout_width="match_parent"
+        >
+           
+
+            <SurfaceView
+                android:id="@+id/surface_local"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               />
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/switchvideo"
+        android:visibility="gone"
+        android:background="@drawable/btn_switchvideo_background"
+        android:layout_gravity="right"
+        android:id="@+id/image_switch_camera" />
+    </FrameLayout>
+          
+
+            <ProgressBar
+                android:id="@+id/progress_local"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100" />
+             
+        </LinearLayout>
+    </LinearLayout>
+ 
+    <SeekBar
+        android:id="@+id/up_down_SB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/left_right_SB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

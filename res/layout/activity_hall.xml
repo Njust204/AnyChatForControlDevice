@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/openBlueTooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开蓝牙" />
+    <Button
+        android:id="@+id/blueToothVisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/openBlueTooth"
+        android:text="蓝牙可见" />
+    <Button
+        android:id="@+id/blueToothSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blueToothVisible"
+        android:text="蓝牙搜索" />
+    <Button
+        android:id="@+id/getInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blueToothSearch"
+        android:text="进入房间" />
+    
+    <Button
+        android:id="@+id/videoConfigBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getInBtn"
+        android:text="视频设置" />
+
+</RelativeLayout>
